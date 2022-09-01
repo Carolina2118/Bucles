@@ -10,15 +10,25 @@
      > La for sintaxis del bucle se ve así:
 
         for (let counter = 0; counter < 4; counter++) {
-        console.log(counter);
-        }
+        console.log(counter);}
 
 - La inicialización es let counter = 0, por lo que el ciclo comenzará a contar en 0.
 
 - La condición de parada es counter < 4, lo que significa que el bucle se ejecutará siempre que la variable del iterador countersea menor que 4.
 
-- La sentencia de iteración es counter++. Esto significa que después de cada bucle, el valor de counteraumentará en 1. Para la primera iteración counterserá igual 0a , para la segunda iteración counterserá igual a 1, y así sucesivamente.
+- La sentencia de iteración es counter++. Esto significa que después de cada bucle, el valor de counteraumentará en 1. 
+Para la primera iteración counterserá igual 0a , para la segunda iteración counterserá igual a 1, y así sucesivamente.
 
-- El bloque de código está dentro de las llaves, console.log(counter)se ejecutará hasta que la condición se evalúe como false. La condición será falsa cuando countersea mayor o igual a 4; el punto en el que la condición se vuelve falsa a veces se denomina condición de parada 
+- El bloque de código está dentro de las llaves, console.log(counter)se ejecutará hasta que la condición se evalúe como false.
+ La condición será falsa cuando countersea mayor o igual a 4; el punto en el que la condición se vuelve falsa a veces se denomina condición de parada 
 
 >> Este forbucle hace posible escribir 0, 1, 2y 3programáticamente.
+
+                ## Bucle a través de un array 
+
+
+- Por ejemplo, podemos usar un for bucle para realizar la misma operación en cada elemento de un array.
+Los array contienen listas de datos, como nombres de clientes o información de productos. 
+Imagina que tenemos una tienda y queremos aumentar el precio de todos los productos de nuestro catálogo.
+ Eso podría ser una gran cantidad de código repetitivo, 
+pero al usar un for bucle para iterar a través de un array, podríamos realizar esta tarea fácilmente.
