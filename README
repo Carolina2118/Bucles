@@ -7,7 +7,7 @@
  - Cuando se cumple la condición, el ciclo se detiene y la computadora pasa a la siguiente parte del programa.
 
                       ## El bucle For
-     > La forsintaxis del bucle se ve así:
+     > La for sintaxis del bucle se ve así:
 
         for (let counter = 0; counter < 4; counter++) {
         console.log(counter);

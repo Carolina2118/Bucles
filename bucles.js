@@ -4,3 +4,8 @@
 for(let numeros =0;numeros < 5; numeros ++ ){
     console.log(numeros);
 }
+// Bucle en reversa.
+
+for ( let number = 10; number >= 5; number --){
+console.log(number);
+}
