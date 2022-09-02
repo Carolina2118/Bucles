@@ -7,3 +7,18 @@ for (let i = 0; i < colores.length; i ++){
     console.log('Uno de los colores que más me gusta es: ' + colores[i]);
 }
 
+// Bucles anidados.(un bucle dentro de otro bucle).
+
+const Bob = ['Carlos','Martin','David','Juan'];
+const Tina = ['Carlos','alexa','Martin'];
+const Mutuo =[];
+
+for (let i = 0; i< Bob.length;i ++){
+    for (let i =0; i< Tina.length; i ++){
+        if (Bob[i] === Tina[i]){
+
+            Mutuo.push(Bob[i])
+        }
+    }
+};
+
