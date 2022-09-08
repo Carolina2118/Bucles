@@ -85,3 +85,18 @@ let i = 0;>
 } while (i < 5);
  
 <console.log(countString);>
+
+                ###La palabra clave de ruptura es break.
+
+ - La break palabra clave permite que los programas salgan del bucle desde dentro del bloque del bucle.      
+ -¡Las declaraciones pueden ser especialmente útiles cuando estamos recorriendo grandes estructuras de datos! Con los descansos, podemos agregar condiciones de prueba además de la condición de parada y salir del bucle cuando se cumplan. 
+
+   <for (let i = 0; i < 99; i++) {
+  if (i > 2 ) {
+    <break;
+  }
+  console.log('Banana.');
+}
+ 
+<console.log('Orange you glad I broke out the loop!');>
+   
