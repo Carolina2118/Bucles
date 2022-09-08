@@ -100,3 +100,11 @@ let i = 0;>
  
 <console.log('Orange you glad I broke out the loop!');>
    
+- Los bucles realizan acciones repetitivas para que no tengamos que codificar ese proceso manualmente cada vez.
+- Cómo escribir forbucles con una variable iteradora que incrementa o decrementa
+- Cómo usar un forbucle para iterar a través de una matriz
+- Un bucle anidado fores un bucle dentro de otro bucle
+- whilelos bucles permiten diferentes tipos de condiciones de parada.
+- Las condiciones de parada son cruciales para evitar bucles infinitos.
+- do...whileejecuta un bucle de código al menos una vez, solo verifica la condición de detención después de la primera ejecución
+- La breakpalabra clave permite que los programas dejen un bucle durante la ejecución de su bloque.
