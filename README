@@ -8,10 +8,10 @@
 
                      ## El bucle For
 
-  > EL for sintaxis del bucle se ve así:
+   EL for sintaxis del bucle se ve así:
 
-       <for (let counter = 0; counter < 4; counter++) {
-       <console.log(counter);}>
+      for (let counter = 0; counter < 4; counter++) {
+       console.log(counter);}
 
 - La inicialización es let counter = 0, por lo que el ciclo comenzará a contar en 0.
 
@@ -45,26 +45,26 @@ ejercicio:
   Necesitará dos conjuntos de "amigos" de dos usuarios simulados para poder extraer los nombres
   de los seguidores que existen en ambas listas.
 
- <let bobsFollowers = ['Joe', 'Marta', 'Sam', 'Erin'];
+ let bobsFollowers = ['Joe', 'Marta', 'Sam', 'Erin'];
  let tinasFollowers = ['Sam', 'Marta', 'Elle'];
  let mutualFollowers = [];
 
- <for (let i = 0; i < bobsFollowers.length; i++) {
+for (let i = 0; i < bobsFollowers.length; i++) {
  for (let j = 0; j < tinasFollowers.length; j++) {
  if (bobsFollowers[i] === tinasFollowers[j]) {
  mutualFollowers.push(bobsFollowers[i]); }
   }
- };>
+ };
 
                       ##El ciclo while
 - La sintaxis de un whilebucle es ideal cuando no sabemos de antemano cuántas veces debe ejecutarse el bucle.
 
 
-<let counterTwo = 1;
+  let counterTwo = 1;
 while (counterTwo < 4) {
   console.log(counterTwo);
   counterTwo++;
-}>
+}
 
 - La counterTwo variable se declara antes del bucle. Podemos acceder a él dentro de nuestro while ciclo ya que está en el ámbito global.
 - Comenzamos nuestro bucle con la palabra clave while seguida de nuestra condición de parada o condición de prueba. Esto se evaluará antes de cada ronda del bucle. Mientras la condición se evalúa como true, el bloque seguirá ejecutándose. Una vez que se evalúe, false el ciclo se detendrá.
@@ -74,29 +74,30 @@ while (counterTwo < 4) {
 
 - Una do...while declaración dice que se debe hacer una tarea una vez y luego seguir haciéndola hasta que ya no se cumpla una condición específica. 
 
-> La sintaxis de una do...whiledeclaración se ve así:
+- La sintaxis de una do...whiledeclaración se ve así:
 
-<let countString = '';
-let i = 0;>
+  let countString = '';
+   let i = 0;
  
-<do {
+ <> do {
   countString = countString + i;
   i++;
 } while (i < 5);
+</>
  
-<console.log(countString);>
+console.log(countString);
 
                 ###La palabra clave de ruptura es break.
 
  - La break palabra clave permite que los programas salgan del bucle desde dentro del bloque del bucle.      
  -¡Las declaraciones pueden ser especialmente útiles cuando estamos recorriendo grandes estructuras de datos! Con los descansos, podemos agregar condiciones de prueba además de la condición de parada y salir del bucle cuando se cumplan. 
 
-   <for (let i = 0; i < 99; i++) {
+   <> for (let i = 0; i < 99; i++) {
   if (i > 2 ) {
     <break;
   }
   console.log('Banana.');
-}
+}</>
  
 <console.log('Orange you glad I broke out the loop!');>
    
@@ -108,8 +109,31 @@ let i = 0;>
 - Las condiciones de parada son cruciales para evitar bucles infinitos.
 - do...whileejecuta un bucle de código al menos una vez, solo verifica la condición de detención después de la primera ejecución
 - La breakpalabra clave permite que los programas dejen un bucle durante la ejecución de su bloque.
-                 ### Funciones como datos.
+                 ### Funciones como datos. 
 - Las funciones de JavaScript se comportan como cualquier otro tipo de datos en el lenguaje; podemos asignar funciones a variables y podemos reasignarlas a nuevas variables.      
 - upongamos que esta función hace un trabajo importante y necesita ser llamada repetidamente. Para cambiar el nombre de esta función sin sacrificar el código fuente, podemos reasignar la función a una variable con un nombre adecuadamente corto:
+
 <const busy = announceThatIAmDoingImportantWork; 
 busy();>
+
+                            ### funciones de orden superior
+
+- La abstracción nos permite escribir código complicado de una manera que sea fácil de reutilizar,
+  depurar y comprender para los lectores humanos.
+- Podemos trabajar con funciones de la misma manera que trabajamos con cualquier otro tipo de datos, 
+  incluso reasignándolos a nuevas variables.
+- Las funciones de JavaScript son objetos de primera clase, por lo que tienen propiedades y métodos como cualquier otro objeto.
+- Las funciones se pueden pasar a otras funciones como parámetros.
+- Una función de orden superior es una función que acepta funciones como parámetros, devuelve una función o ambas cosas.
+
+ > const addTwo = num => {
+  return num + 2;
+  }
+
+ > const checkConsistentOutput = (func, val) => {>
+  let checkA = val + 2;
+  let checkB = func(val);
+  return checkA === checkB ? func(val) : 'inconsistent results';  
+} >
+
+> console.log(checkConsistentOutput(addTwo, 10));
