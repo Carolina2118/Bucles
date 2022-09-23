@@ -13,10 +13,8 @@ nombres.forEach(item =>{
 })
     console.log(contador);
 
+// metodo map() como crear un mensaje secreto 
+const animales = ['Hen', 'elephant', 'llama', 'leopard', 'ostrich', 'Whale', 'octopus', 'rabbit', 'lion', 'dog'];
 
-
-
-
-// metodo map()
-const animales = ['elefante', ' jirafa', 'cocodrilo', 'caballo', 'leon'];
-
+const mensaje = animales.map(animal => animal [0]);
+console.log(mensaje.join(''));
