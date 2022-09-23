@@ -1,5 +1,22 @@
 // metodo forEach
 
-const nombres = ['Carolos', 'Camila', 'Maria', ' josealfledo'];
+const nombres = ['Carlos', 'Maria', 'Camila', ,'Maria', 'Carlos',' josealfledo', 'Carlos'];
 
-nombres.forEach(nom => console.log('mi nombre es:${nombres}'));
+let contador = {};
+
+nombres.forEach(item =>{
+    if (contador[item]){
+        contador[item]++;
+    }else {
+        contador[item] =1;
+    }
+})
+    console.log(contador);
+
+
+
+
+
+// metodo map()
+const animales = ['elefante', ' jirafa', 'cocodrilo', 'caballo', 'leon'];
+
