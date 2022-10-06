@@ -64,3 +64,13 @@ const startsWithS = animals.findIndex(animal => {
   return animal[0] === 's' ? true : false;
 });
 console.log( startsWithS );
+
+//metodo .reduce() El método devuelve un único valor después de iterar a través de los elementos de un array, reduciendo así eñ array.
+
+const numbers = [1, 2, 4, 10];
+ 
+const summedNums = numbers.reduce((accumulator, currentValue) => {
+  return accumulator + currentValue
+})
+ 
+console.log(summedNums);

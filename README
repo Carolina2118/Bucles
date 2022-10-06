@@ -137,3 +137,16 @@ busy();>
 } >
 
 > console.log(checkConsistentOutput(addTwo, 10));
+
+### Documentación del iterador
+- Hay muchos métodos de array incorporados adicionales, una lista completa de los cuales se encuentra en la página de métodos de iteración del array de MDN .
+
+La documentación de cada método contiene varias secciones:
+
+- Una breve definición.
+- Un bloque con la sintaxis correcta para usar el método.
+- Una lista de parámetros que el método acepta o requiere.
+- El valor de retorno de la función.
+- Una descripción extendida.
+- Ejemplos de uso del método.
+- Otra información adicional.
