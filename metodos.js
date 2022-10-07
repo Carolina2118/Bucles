@@ -74,3 +74,28 @@ const summedNums = numbers.reduce((accumulator, currentValue) => {
 })
  
 console.log(summedNums);
+
+// ejercicios.
+
+const cities = ['Orlando', 'Dubai', 'Edinburgh', 'Chennai', 'Accra', 'Denver', 'Eskisehir', 'Medellin', 'Yokohama'];
+
+const nums = [1, 50, 75, 200, 350, 525, 1000];
+
+//  Reemplace la palabra method en la primera llamada al método con un método que haga algo con cada uno de los valores del array y devuelva undefined.
+cities.forEach(city => console.log('HA VISITADO A  ' + city + '?'));
+
+// En la segunda llamada al método, reemplace la palabra method con un método que devolverá un array con solo aquellos elementos más largos que los 7 caracteres.
+const longCities = cities.filter(city => city.length > 7);
+
+// En la tercera llamada al método, reemplace la palabra method con un método que acepte un array que contenga varios valores y devuelva un solo valor.
+const word = cities.reduce((acc, currVal) => {
+  return acc + currVal[0]
+}, "C");
+
+console.log(word)
+
+// En la cuarta llamada al método, reemplace la palabra methodcon un método que devolverá un nuevo array de números devueltos por la función.
+const smallerNums = nums.map(num => num - 5);
+
+// En la quinta llamada al método, reemplace la palabra method con un método que devolverá un valor booleano.
+nums.every(num => num < 0);
