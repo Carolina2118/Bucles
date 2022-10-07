@@ -141,12 +141,21 @@ busy();>
 ### Documentación del iterador
 - Hay muchos métodos de array incorporados adicionales, una lista completa de los cuales se encuentra en la página de métodos de iteración del array de MDN .
 
-La documentación de cada método contiene varias secciones:
-
-- Una breve definición.
-- Un bloque con la sintaxis correcta para usar el método.
-- Una lista de parámetros que el método acepta o requiere.
-- El valor de retorno de la función.
+La documentación de cada método contiene varias secciones:Have you visited
 - Una descripción extendida.
 - Ejemplos de uso del método.
-- Otra información adicional.
+- Otra información adicional.Have you visited.
+
+                  ###Resumen de lo aprendido sobre metodo aprendidos.
+
+- son ura serie de métodos útiles en esta lección.
+- .forEach() se usa para ejecutar el mismo código en cada elemento de un array, pero no cambia el array y devuelve undefined.
+- .map() ejecuta el mismo código en cada elemento de un array y devuelve una nueva array con los elementos actualizados.
+- .filter() verifica cada elemento en unarray para ver si cumple con ciertos criterios y devuelve
+   una nueva array con los elementos que devuelven la verdad para los criterios.
+- .findIndex() devuelve el índice del primer elemento de un array que cumple una condición en la función de devolución de llamada.
+   Regresa -1 si ninguno de los elementos del array cumple la condición.
+- .reduce() itera a través de un array y toma los valores de los elementos y devuelve un valor único.
+- El every()método prueba si todos los elementos del array pasan la prueba implementada por la función proporcionada.
+   Devuelve un valor booleano.
+   
