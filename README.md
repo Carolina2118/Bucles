@@ -162,3 +162,5 @@ La documentación de cada método contiene varias secciones:Have you visited
 - .reduce() itera a través de un array y toma los valores de los elementos y devuelve un valor único.
 - El every()método prueba si todos los elementos del array pasan la prueba implementada por la función proporcionada.
   Devuelve un valor booleano.
+
+   
