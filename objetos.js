@@ -38,3 +38,19 @@ fernanda: 'camila'
 nombres.maria ='torre';// cambia un objeto 
 delete nombres.juan;// elimina un objeto.
 console.log(nombres);
+
+// Metodos.
+
+let retreatMessage = 'We no longer wish to conquer your planet. It is full of dogs, which we do not care for.';
+
+let mascota = {
+  retreat() {
+    console.log(mensajeDeRetirada)
+  },
+  takeOff() {
+    console.log('Spim... Borp... Glix... Blastoff!')
+  }
+};
+
+mascota.retreat();
+mascota.takeOff();
