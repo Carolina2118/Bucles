@@ -12,7 +12,7 @@ let food ={
  const favorite = food.fruta;
  console.log(favorite);
 
-//Notación de corchetes.
+//Notación de corchetes.( Los objetos son mutables )
 
 let asignaturas = {
     matematica:'ecuaciones',
@@ -24,4 +24,17 @@ let asignaturas = {
 
 let contexto = 'literatura';
 
-console.log(asignaturas[contexto])
+console.log(asignaturas[contexto]);
+
+// Asignación de propiedad
+
+let nombres = {
+maria: 'ignacia',
+juan: 'pepito',
+nicolas: 'marcelo',
+fernanda: 'camila'
+
+};
+nombres.maria ='torre';// cambia un objeto 
+delete nombres.juan;// elimina un objeto.
+console.log(nombres);
