@@ -91,3 +91,28 @@ let spaceship = {
   
   let firstPassenger = spaceship.passengers[0];
   console.log(firstPassenger);
+
+  // 
+
+  let paceship = {
+    'Fuel Type' : 'Turbo Fuel',
+    homePlanet : 'Earth'
+  };
+  
+  
+  let greenEnergy = obj => {
+    obj['Fuel Type'] = 'avocado oil';
+  }
+  
+  let remotelyDisable = obj => {
+    obj.disabled = true;
+  }
+  
+  greenEnergy(paceship);
+  
+  remotelyDisable(paceship);
+  
+  console.log(paceship);
+  
+  //Llame a sus dos funciones con el spaceshipobjeto en el editor de código, luego console.log()
+  //el spaceshipobjeto para confirmar que esas propiedades se cambiaron/agregaron.
