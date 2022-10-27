@@ -92,7 +92,7 @@ let spaceship = {
   let firstPassenger = spaceship.passengers[0];
   console.log(firstPassenger);
 
-  // 
+  // Pasar por referencia
 
   let paceship = {
     'Fuel Type' : 'Turbo Fuel',
@@ -113,6 +113,6 @@ let spaceship = {
   remotelyDisable(paceship);
   
   console.log(paceship);
-  
+
   //Llame a sus dos funciones con el spaceshipobjeto en el editor de código, luego console.log()
   //el spaceshipobjeto para confirmar que esas propiedades se cambiaron/agregaron.
