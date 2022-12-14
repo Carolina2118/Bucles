@@ -40,3 +40,25 @@ const robot = {
   
 };
 console.log(auto.autoFavorito);
+
+// metodo setter
+
+const humano = {
+  _age: 40,
+  set age (nuevaEdad){
+    if (typeof nuevaEdad === 'number'){
+      this._age = nuevaEdad;
+    }else{
+      console.log("Debes asignarle un número a la edad");
+    }
+    
+  }
+};
+humano.age = 41;
+console.log(humano._age);
+
+humano.age = 41;
+
+humano.age = 45;
+console.log(humano._age);
+
